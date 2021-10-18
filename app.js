@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const router = require('./routes/router')
 
 const PORT = process.env.PORT || 3000;
-const DB_URL = 'mongodb+srv://violet:violet@cluster0.ufrci.mongodb.net/start?retryWrites=true&w=majority';
+const DB_URL = 'mongodb+srv://<username>:<password>@cluster0.ufrci.mongodb.net/<dbName>?retryWrites=true&w=majority';
 
 const app = express();
 app.use(express.json());
